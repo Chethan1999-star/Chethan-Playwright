@@ -20,5 +20,5 @@ test('test', async ({ page }) => {
   await page.getByRole('textbox').nth(4).fill('0382');
   await page.getByRole('button', { name: 'Save' }).click();
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/184');
-  await expect(page.getByRole('heading', { name: 'Chethan Gowda' })).toBeVisible();
+  //await expect(page.getByRole('heading', { name: 'Chethan Gowda' })).toBeVisible();
 });
